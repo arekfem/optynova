@@ -1,0 +1,184 @@
+@use 'typography' as *;
+@use 'colors' as *;
+
+@media (width >= 768px) {
+	.nav {
+		.hamburger {
+			display: none;
+		}
+		&__items {
+			position: static;
+			flex-direction: row;
+			justify-content: space-evenly;
+			height: 100%;
+			width: auto;
+			transform: translateX(0);
+		}
+
+		&__item {
+			padding: 1.2em 2em;
+			color: $gray;
+			font-family: $font-body;
+			font-size: 1.2rem;
+			transition:
+				color 0.3s,
+				background-color 0.3s;
+
+			&:hover {
+				color: $pure-white;
+				background-color: $primary-color;
+			}
+		}
+	}
+
+	.header {
+		.wrapper {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&__content {
+			width: 45%;
+		}
+
+		&__image-box {
+			width: 45%;
+		}
+
+		&__image {
+			height: 512px;
+		}
+
+		&__badge {
+			left: -6.2em;
+		}
+	}
+
+	.why-us {
+		&__icon {
+			width: 8rem;
+			height: 8rem;
+			.material-symbols-outlined {
+				font-size: 3.2rem;
+			}
+		}
+	}
+
+	.about-us {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&__image {
+			width: 45%;
+			height: 700px;
+			&--desktop {
+				display: block;
+			}
+
+			&--mobile {
+				display: none;
+			}
+		}
+
+		&__texts-box {
+			width: 45%;
+		}
+	}
+
+	.section {
+		&__title {
+			&-underline {
+				&--left {
+					margin: 0 0 4em;
+				}
+			}
+
+			&--variant {
+				text-align: left;
+			}
+		}
+	}
+
+	.services,
+	.testimonials {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
+
+	.section--hero {
+		padding: 8em 4em;
+		background-size: cover;
+		background-position: center;
+		background-image: $hero-gradient, url('../img/glasses_big.jpg');
+		text-align: center;
+	}
+
+	.cta {
+		&__title {
+			font-size: 6.4rem;
+		}
+
+		&__description {
+			font-size: 2.2rem;
+		}
+	}
+
+	.process {
+		&__list {
+			display: flex;
+			position: relative;
+		}
+		&__line {
+			position: absolute;
+			top: 3.2rem;
+			width: 100%;
+			height: 1px;
+			background-color: #0059bb33;
+			z-index: -1;
+		}
+	}
+
+	.price {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.contact {
+		&__inner {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__info {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		&__item:last-child {
+			margin-bottom: 0;
+		}
+		&__map {
+			width: 50%;
+			iframe {
+				height: 550px;
+			}
+		}
+	}
+
+	.footer {
+		&__boxes {
+			flex-wrap: nowrap;
+			gap: 0;
+		}
+
+		&__box {
+			&:first-child {
+				width: 45%;
+			}
+			width: 25%;
+		}
+	}
+}

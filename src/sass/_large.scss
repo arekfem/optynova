@@ -1,0 +1,76 @@
+@media (width >= 900px) {
+	.why-us {
+		&__list {
+			justify-content: space-evenly;
+		}
+	}
+}
+@media (width >= 992px) {
+	.section--hero {
+		padding: 10em 6em;
+	}
+
+	.services,
+	.testimonials {
+		justify-content: space-between;
+		gap: 0;
+	}
+
+	.brands {
+		&__items {
+			justify-content: space-between;
+		}
+	}
+
+	.contact {
+		&__label {
+			font-size: 2.4rem;
+		}
+
+		&__value {
+			font-size: 1.8rem;
+		}
+	}
+
+	.footer {
+		&__box {
+			&:first-child {
+				width: 50%;
+			}
+			width: 20%;
+		}
+	}
+}
+
+@media (width >= 1200px) {
+	.nav {
+		&__brand {
+			font-size: 2.8rem;
+		}
+		&__item {
+			font-size: 1.4rem;
+		}
+	}
+
+	.header {
+		&__title {
+			font-size: 9.6rem;
+			margin-bottom: 3.2rem;
+		}
+		&__image--box {
+			width: 35%;
+		}
+	}
+
+	.why-us {
+		&__icon {
+			font-size: 2rem;
+		}
+	}
+
+	.about-us {
+		&__image {
+			height: 600px;
+		}
+	}
+}

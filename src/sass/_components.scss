@@ -1,0 +1,88 @@
+@use 'colors' as *;
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.button {
+	padding: 1.2em 2.4em;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	background-color: $primary-color;
+	border: none;
+	color: $pure-white;
+	transition: transform 0.3s;
+
+	&:hover {
+		transform: translateY(-8px);
+	}
+
+	&--secondary {
+		padding: 1.2em 0 0.25em;
+		letter-spacing: 0.1em;
+		background: none;
+		color: $primary-color;
+		border-bottom: 2px solid $primary-color;
+	}
+
+	&--nav {
+		display: none;
+	}
+}
+
+.section {
+	padding: 6em 2em;
+
+	&--color {
+		background-color: $secondary-bg-color;
+	}
+	&__title {
+		padding-bottom: 0.5em;
+		text-align: center;
+		font-size: 3.2rem;
+		&-underline {
+			margin: 0 auto 4em;
+			width: 64px;
+			height: 4px;
+			background-color: $secondary-color;
+			opacity: 0.5;
+		}
+	}
+}
+
+.card {
+	position: relative;
+	margin-bottom: 2em;
+	padding: 2em;
+	background-color: rgba(255, 255, 255, 0.6);
+	border: 1px solid rgba(0, 89, 187, 0.1);
+	border-radius: 0.5em;
+	box-shadow: 0 8px 30px rgba(0, 89, 187, 0.05);
+	overflow: hidden;
+	transition: transform 0.3s ease;
+	&:hover {
+		transform: translateY(-8px);
+	}
+}
+
+@media (width >= 768px) {
+	.button {
+		&--nav {
+			display: block;
+			margin: 0 1.6em;
+		}
+	}
+
+	.card {
+		margin: 0;
+		width: 45%;
+	}
+}
+
+@media (width >= 992px) {
+	.card {
+		width: 30%;
+	}
+}

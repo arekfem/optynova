@@ -1,0 +1,40 @@
+@use 'typography' as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3 {
+	font-family: $font-display;
+}
+
+h1 {
+	font-weight: 400;
+}
+
+h2,
+h3 {
+	font-weight: 500;
+}
+h3 {
+	font-size: 2rem;
+	font-weight: 400;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+address {
+	font-style: normal;
+}
+
+ul {
+	list-style: none;
+}
