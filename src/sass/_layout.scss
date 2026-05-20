@@ -443,6 +443,14 @@ body {
 	background-color: $pure-black;
 	color: $light-gray;
 
+	a {
+		color: $light-gray;
+		transition: color 0.3s;
+	}
+	a:hover {
+		color: $pure-white;
+	}
+
 	.wrapper {
 		padding: 5em 2em 2em;
 	}
@@ -476,10 +484,6 @@ body {
 		display: flex;
 		align-items: center;
 		gap: 1em;
-
-		a {
-			color: $light-gray;
-		}
 	}
 
 	&__box-open {
@@ -504,9 +508,8 @@ body {
 	&__bottom-text {
 		margin-top: 1.5em;
 		text-align: center;
-	}
-
-	&__author {
-		color: #0079ff;
+		a {
+			color: #0079ff;
+		}
 	}
 }
